@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola mundo radio button!!!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <RadioGroup
+        android:id="@+id/rgPrincipal"
+        android:layout_width="310dp"
+        android:layout_height="409dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMensaje"
+        app:layout_constraintVertical_bias="0.268" >
+
+        <RadioButton
+            android:id="@+id/rbLunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lunes"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbMartes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Martes"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbMiercoles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miercoles"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbJueves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jueves"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbViernes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viernes"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbSabado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sábado"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbDomingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domingo"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
